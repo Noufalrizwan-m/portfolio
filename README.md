@@ -1,9 +1,33 @@
-# Noufal Rizwan portfolio
+# Noufal Rizwan portfolio — v2
 
-Static responsive portfolio. Serve `dist` with an HTTP server. Uses locally vendored GSAP 3.13.0, ScrollTrigger, and Motion 12.23.24 (vanilla API, not React motion.div). Google Fonts is the only external rendering dependency; system fonts provide fallbacks.
+Serve `dist/` with an HTTP server. The site is a static HTML/CSS/JavaScript project using GSAP 3.13.0, ScrollTrigger and Motion 12.23.24's vanilla API. No React build or backend is required.
 
-Content is based on the supplied résumé. Project covers are original illustrative layouts, not screenshots. Each project opens a contribution summary and links to its live website. Contact links open email/phone apps. The résumé is downloadable. No contact-form backend is required.
+## Scroll story
 
-Motion: hero entrance, scroll reveals, scroll progress, timeline drawing, character parallax, and button hover. System reduced-motion preference and the footer toggle disable animations. The generated character is a still illustration animated through page transforms, not a walking video.
+- The introduction pins for four viewport heights on desktop and 2.5 on phones.
+- Three matching transparent avatar poses provide the greeting wave and résumé-holding pose.
+- The HTML résumé sheet leaves the hand, loops through the scene, turns toward the viewer, and scales beyond all four screen edges. About text appears only after full coverage.
+- The timeline pins for two viewport heights, showing education, Intronsoft, Panchathan Logistics, and Aquaconnect chronologically.
+- Desktop projects pin for three viewport heights. Phone projects remain vertically stacked.
+- Reverse scrolling reverses each chapter. Chapter navigation and Skip intro use exact scroll destinations.
+- System reduced-motion preferences, the motion toggle, unavailable assets/libraries, and viewports under 620px high retain the readable document layout. The avatar poses are images animated through page transforms, not a video or live 3D model.
 
-Edit dist/index.html for page content, dist/app.js for project details and motion, and dist/style.css for layout.
+## Editing
+
+`dist/index.html` contains résumé-based content and section order. `dist/app.js` contains project summaries, scroll timelines, navigation and motion controls. `dist/style.css` contains base styling; `dist/story.css` contains the v2 scenes and responsive chapter layouts.
+
+Project covers are illustrative compositions rather than screenshots. Project buttons open contribution summaries and live links. Email and phone links open the visitor's mail/phone app; the original résumé PDF is downloadable.
+
+## Character assets
+
+Generated using the built-in image tool from the user's identity photo and supplied style reference. Prompts are in `IMAGE-PROMPTS-V2.md`.
+
+- [Wave A](dist/assets/avatar-wave-a.png)
+- [Wave B](dist/assets/avatar-wave-b.png)
+- [Holding pose](dist/assets/avatar-hold.png)
+
+Google Fonts is the only external rendering dependency; system fonts provide fallbacks. Animation libraries and character assets are served locally with the site.
+
+## Verification
+
+Checked desktop (1280×800) and phone (390×844), paper coverage, Skip intro, chronological timeline, project forward/reverse scrolling, project detail dialog and Escape close, motion-off layout, direct chapter navigation, and horizontal overflow. Checks and browser console showed no JavaScript errors.
