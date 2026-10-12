@@ -52,11 +52,12 @@ function setupMotion() {
     gsap.set('.journey-line', {scaleX:0});
     const avatar = document.querySelector('.story-avatar');
     const avatarRect = avatar.getBoundingClientRect();
+    const sceneRect = story.getBoundingClientRect();
     const shiftX = mobile ? w * .19 : w * .09;
     // The invisible-paper grip is around (33%, 52%) of the matching avatar asset.
     const initialScale = mobile ? .48 : .65;
-    const originX = avatarRect.left + shiftX + avatarRect.width * .33 - w / 2 - 90 * initialScale;
-    const originY = avatarRect.top + avatarRect.height * .52 - h / 2 + 120 * initialScale;
+    const originX = avatarRect.left - sceneRect.left + shiftX + avatarRect.width * .33 - w / 2 - 90 * initialScale;
+    const originY = avatarRect.top - sceneRect.top + avatarRect.height * .52 - h / 2 + 120 * initialScale;
     const coverScale = Math.max(w / 180, h / 240) * 1.18;
     const intro = gsap.timeline({defaults:{ease:'none'}, scrollTrigger:{
       id:'intro-story', trigger:story, start:'top top', end:()=>'+=' + innerHeight * (mobile ? 2.5 : 4),
