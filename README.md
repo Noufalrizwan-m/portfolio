@@ -1,12 +1,12 @@
-# Noufal Rizwan portfolio — v2
+# Noufal portfolio — v2
 
 Serve `dist/` with an HTTP server. The site is a static HTML/CSS/JavaScript project using GSAP 3.13.0, ScrollTrigger and Motion 12.23.24's vanilla API. No React build or backend is required.
 
 ## Scroll story
 
-- The introduction pins for four viewport heights on desktop and 2.5 on phones.
-- Three matching transparent avatar poses provide the greeting wave and résumé-holding pose.
-- The HTML résumé sheet leaves the hand, loops through the scene, turns toward the viewer, and scales beyond all four screen edges. About text appears only after full coverage.
+- The introduction pins for two viewport heights on desktop and 1.65 on phones.
+- A separate hand/forearm layer provides one smooth greeting wave while the head and torso remain still; a matching holding pose introduces the résumé. The alternative wave image is retained as an asset.
+- The HTML résumé sheet leaves the hand, follows two joined cubic curves through one gentle loop, turns toward the viewer, and scales beyond all four screen edges. About text appears only after full coverage.
 - The timeline pins for two viewport heights, showing education, Intronsoft, Panchathan Logistics, and Aquaconnect chronologically.
 - Desktop projects pin for three viewport heights. Phone projects remain vertically stacked.
 - Reverse scrolling reverses each chapter. Chapter navigation and Skip intro use exact scroll destinations.
@@ -16,7 +16,7 @@ Serve `dist/` with an HTTP server. The site is a static HTML/CSS/JavaScript proj
 
 `dist/index.html` contains résumé-based content and section order. `dist/app.js` contains project summaries, scroll timelines, navigation and motion controls. `dist/style.css` contains base styling; `dist/story.css` contains the v2 scenes and responsive chapter layouts.
 
-Project covers are illustrative compositions rather than screenshots. Project buttons open contribution summaries and live links. Email and phone links open the visitor's mail/phone app; the original résumé PDF is downloadable.
+Project covers are captured screenshots of the reviewed live websites (October 2026). Project chapters use corresponding brand colors: Dr.Grow Labs sage/green, Aquaconnect blue, Panchathan green/amber, Fish Choice warm cream/red, and VJoin lilac. Project buttons open contribution summaries and live links. Email and phone links open the visitor's mail/phone app; the original résumé PDF is downloadable.
 
 ## Character assets
 
