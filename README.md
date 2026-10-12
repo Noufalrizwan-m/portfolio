@@ -1,6 +1,19 @@
 # Noufal portfolio — v2
 
-Serve `dist/` with an HTTP server. The site is a static HTML/CSS/JavaScript project using GSAP 3.13.0, ScrollTrigger and Motion 12.23.24's vanilla API. No React build or backend is required.
+The site is a static HTML/CSS/JavaScript project using GSAP 3.13.0, ScrollTrigger and Motion 12.23.24's vanilla API. Vite provides local development and automatic reloads. No React build or backend is required.
+
+## Run in VS Code
+
+Open a terminal in the portfolio folder and run:
+
+```sh
+npm install
+npm run dev
+```
+
+Open the local URL printed in the terminal. Edit the files inside `dist/`; the page reloads automatically.
+
+`npm run build` checks the JavaScript and copies the complete static website into `build/`, including the animation libraries, character assets, and résumé. `npm run preview` serves that build locally.
 
 ## Scroll story
 

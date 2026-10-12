@@ -1,0 +1,16 @@
+{
+  "name": "noufal-portfolio",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Noufal's animated front-end portfolio",
+  "scripts": {
+    "dev": "vite dist --host 127.0.0.1",
+    "start": "npm run dev",
+    "check": "node --check dist/app.js",
+    "build": "npm run check && node scripts/build.mjs",
+    "preview": "vite preview dist --outDir ../build --host 127.0.0.1"
+  },
+  "devDependencies": {
+    "vite": "^8.3.4"
+  }
+}
